@@ -25,6 +25,7 @@ p {
   color: black;
   font-size: 21px;
   transition: background-color 1s;
+  transition: transform 0.3s ease;
 }
 .header_button a{
   text-decoration: none;
@@ -39,6 +40,7 @@ p {
 .header_button:hover {
   background-color: rgba(72, 90, 129, 0.548);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 
@@ -100,6 +102,7 @@ p {
   border: solid 3px;
   background-color: rgba(120, 129, 148, 0.548);
   transition: background-color 1s;
+  transition: transform 0.3s ease;
 }
 .nav_button a {
   text-decoration: none;
@@ -113,6 +116,7 @@ p {
 .nav_button:hover {
   background-color: #4F5D75;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .article_discounted {
@@ -142,19 +146,24 @@ p {
 }
 
 .article_product_box {
-    padding-bottom: 60px;
-    padding-top: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #696969;
+    width: 190px;
+    height: 170px;
+    object-fit: cover;
 }
 
+
 .article_product_bigBox {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fafaf0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.article_product_bigBox:hover {
+  transform: scale(1.1);
 }
 
 
